@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: #FBDB65;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.navegacao {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-item {
+    font-weight: 400;
+    font-size: 18px;
+    color:black
+}
+
+.navegacao li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navegacao li a:hover {
+    color: orange;
+}
+
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid black;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+  
+.conteudo-principal-escrito-titulo {
+    font-weight: 400;
+    font-size: 64px;
+    color: black;
+}
+  
+.conteudo-principal-escrito-subtitulo {
+    font-weight: 400;
+    font-size: 24px;
+    color: black;
+}
+
+.conteudo-principal-imagem {
+    height: 430px;
+}
+  
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+  
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid black;
+    padding-top: 48px;
+    font-weight: 500;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 16px;
+}
+
+.item {
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+}
+
+.historia-conteudo-main {
+  margin-bottom: 48px;
+  padding: 25px;
+}
+
+.historia-titulo {
+    font-weight: 500;
+    font-size: 35px;
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.historia-subtitulo {
+  font-weight: 500;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.historia-conteudo {
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  text-align: justify;
+  line-height: 1.4;
+}
