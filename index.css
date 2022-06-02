@@ -1,130 +1,243 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500&display=swap');
-
-* {
+:root {
+    font-size: 16px;
+  }
+  
+  @media (min-width: 480px) {
+    :root {
+      font-size: 24px;
+    }
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
-
-body {
-    font-size: 100%;
-    background-color: #FBDB65;
-}
-
-.cabecalho {
+  }
+  
+  body {
+    background-color: #fbdb65;
+    padding: 0 20%;
+  }
+  
+  @media (max-width: 1400px) {
+    body {
+      padding: 0;
+    }
+  }
+  
+  .cabecalho {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 24px;
-}
-
-.logo {
+  }
+  
+  .logo {
     height: 50px;
-}
-
-.navegacao {
+  }
+  
+  .navegacao {
     display: flex;
     gap: 32px;
-}
-
-.nav-item {
+  }
+  
+  .nav-item {
     font-weight: 400;
-    font-size: 18px;
-    color:black
-}
-
-.navegacao li a {
+    font-size: 20px;
+    color: black;
+  }
+  
+  .navegacao li a {
     transition: all 0.3s ease 0s;
-}
-
-.navegacao li a:hover {
+  }
+  
+  .navegacao li a:hover {
     color: orange;
-}
-
-
-.conteudo {
+  }
+  
+  .conteudo {
     margin-bottom: 48px;
     border-top: 0.4px solid black;
-}
-
-.conteudo-principal {
+  }
+  
+  .conteudo-principal {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-}
+  }
   
-.conteudo-principal-escrito {
+  .conteudo-principal-escrito {
     display: flex;
     flex-direction: column;
     gap: 32px;
-}
+  }
   
-.conteudo-principal-escrito-titulo {
+  .conteudo-principal-escrito-titulo {
     font-weight: 400;
     font-size: 64px;
     color: black;
-}
+  }
   
-.conteudo-principal-escrito-subtitulo {
+  .conteudo-principal-escrito-subtitulo {
     font-weight: 400;
     font-size: 24px;
     color: black;
-}
-
-.conteudo-principal-imagem {
-    height: 430px;
-}
+  }
   
-.conteudo-secundario {
+  .conteudo-principal-imagem {
+    height: 430px;
+  }
+  
+  .conteudo-secundario {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
     margin-top: 48px;
-}
+  }
   
-.conteudo-secundario-titulo {
+  .conteudo-secundario-titulo {
     border-top: 0.4px solid black;
     padding-top: 48px;
     font-weight: 500;
     font-size: 30px;
     color: black;
     margin-bottom: 16px;
-}
-
-.item {
+  }
+  
+  .item {
     font-weight: 300;
     font-size: 18px;
     color: black;
-}
-
-.historia-conteudo-main {
-  margin-bottom: 48px;
-}
-
-.historia-titulo {
+  }
+  
+  .conteudo {
+    margin-bottom: 48px;
+    padding: 25px;
+    border-top: 0.4px solid black;
+  }
+  
+  .historia-titulo {
+    margin-top: 10px;
     font-weight: 500;
-    font-size: 35px;
     color: black;
     margin-bottom: 10px;
     margin-left: 10px;
-}
-
-.historia-subtitulo {
-  font-weight: 500;
-    font-size: 30px;
+  }
+  
+  .subtitulo {
+    font-weight: 500;
     color: black;
     margin-bottom: 10px;
     margin-left: 10px;
-}
+    margin-top: 30px;
+  }
+  
+  .historia-conteudo {
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    color: black;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    text-align: justify;
+    line-height: 1.4;
+  }
+  
+  .hyperlink {
+    font-weight: 500;
+    color: black;
+  }
+  
+  .hyperlink li a {
+    color: black;
+  }
+  
+  .hyperlink li a:hover {
+    color: orange;
+  }
+  
+  .lista-ordenada {
+    border: 1px solid black;
+    padding: 20px;
+  }
+  
+  .lista-ordenada li {
+    list-style-position: inside;
+  }
+  
+  .titulo {
+    font-weight: 500;
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  
+  .curiosidades-conteudo {
+    font-weight: 500;
+    color: black;
+    line-height: 1.4;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    text-align: justify;
+  }
+  
+  .curiosidades-conteudo-com-imagem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .imagem-texto {
+    font-weight: 500;
+    color: black;
+    line-height: 1.4;
+    margin-left: 15px;
+    text-align: justify;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  
+  .curiosidades-imagem {
+    height: 500px;
+    margin-right: 50px;
+    margin-left: 20px;
+  }
 
-.historia-conteudo {
-  font-weight: 500;
-  font-size: 16px;
-  color: black;
-  margin-left: 15px;
-  margin-bottom: 10px;
-}
+  div .imagem-texto p a {
+    color: black;
+  }
+
+  div .imagem-texto p a:hover {
+    color: orange;
+  }
+
+  .pergunta {
+    background-color: #faf7d9;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .pergunta-texto {
+    margin-left: 15px;
+  }
+
+  div .pergunta-texto li{
+    margin-left: 40px;
+  }
+
+  .resposta {
+    background-color: #FFB81C;
+    color: #FFB81C;
+  }
+
+  .resposta:hover {
+    color: black;
+    transition: all 0.5s ease 0s;
+    padding: 10px;
+  }
