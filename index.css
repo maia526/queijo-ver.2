@@ -207,6 +207,7 @@
     height: 500px;
     margin-right: 50px;
     margin-left: 20px;
+    float: right;
   }
 
   div .imagem-texto p a {
@@ -240,4 +241,12 @@
     color: black;
     transition: all 0.5s ease 0s;
     padding: 10px;
+  }
+
+  th, td {
+    padding: 3px;
+  }
+
+  table {
+    padding: 5px;
   }
