@@ -41,6 +41,7 @@
   .navegacao {
     display: flex;
     gap: 32px;
+    list-style: none;
   }
   
   .nav-item {
