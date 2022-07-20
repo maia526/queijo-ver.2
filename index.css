@@ -1,277 +1,278 @@
 :root {
-    font-size: 16px;
+  font-size: 16px;
+}
+
+@media (min-width: 480px) {
+  :root {
+    font-size: 24px;
   }
-  
-  @media (min-width: 480px) {
-    :root {
-      font-size: 24px;
-    }
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-  }
-  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #fbdb65;
+  padding: 0 20%;
+}
+
+@media (max-width: 1400px) {
   body {
-    background-color: #fbdb65;
-    padding: 0 20%;
+    padding: 0;
   }
-  
-  @media (max-width: 1400px) {
-    body {
-      padding: 0;
-    }
-  }
-  
-  .cabecalho {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px;
-  }
-  
-  .logo {
-    height: 50px;
-  }
-  
-  .navegacao {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-  }
-  
-  .nav-item {
-    font-weight: 400;
-    font-size: 20px;
-    color: black;
-  }
-  
-  .navegacao li a {
-    transition: all 0.3s ease 0s;
-  }
-  
-  .navegacao li a:hover {
-    color: orange;
-  }
-  
-  .conteudo {
-    margin-bottom: 48px;
-    border-top: 0.4px solid black;
-  }
-  
-  .conteudo-principal {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .conteudo-principal-escrito {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-  
-  .conteudo-principal-escrito-titulo {
-    font-weight: 400;
-    font-size: 64px;
-    color: black;
-  }
-  
-  .conteudo-principal-escrito-subtitulo {
-    font-weight: 400;
-    font-size: 24px;
-    color: black;
-  }
-  
-  .conteudo-principal-imagem {
-    height: 430px;
-  }
-  
-  .conteudo-secundario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    margin-top: 48px;
-  }
-  
-  .conteudo-secundario-titulo {
-    border-top: 0.4px solid black;
-    padding-top: 48px;
-    font-weight: 500;
-    font-size: 30px;
-    color: black;
-    margin-bottom: 16px;
-  }
-  
-  .item {
-    font-weight: 300;
-    font-size: 18px;
-    color: black;
-  }
-  
-  .conteudo {
-    margin-bottom: 48px;
-    padding: 25px;
-    border-top: 0.4px solid black;
-  }
-  
-  .historia-titulo {
-    margin-top: 10px;
-    font-weight: 500;
-    color: black;
-    margin-bottom: 10px;
-    margin-left: 10px;
-  }
-  
-  .subtitulo {
-    font-weight: 500;
-    color: black;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-top: 30px;
-  }
-  
-  .historia-conteudo {
-    font-size: 1rem;
-    margin-top: 1rem;
-    font-weight: 500;
-    color: black;
-    margin-left: 15px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    text-align: justify;
-    line-height: 1.4;
-  }
-  
-  .hyperlink {
-    font-weight: 500;
-    color: black;
-  }
-  
-  .hyperlink li a {
-    color: black;
-  }
-  
-  .hyperlink li a:hover {
-    color: orange;
-  }
-  
-  .lista-ordenada {
-    border: 1px solid black;
-    padding: 20px;
-  }
-  
-  .lista-ordenada li {
-    list-style-position: inside;
-  }
-  
-  .titulo {
-    font-weight: 500;
-    color: black;
-    margin-bottom: 10px;
-    margin-left: 10px;
-  }
-  
-  .curiosidades-conteudo {
-    font-weight: 500;
-    color: black;
-    line-height: 1.4;
-    margin-left: 15px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    text-align: justify;
-  }
-  
-  .curiosidades-conteudo-com-imagem {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .imagem-texto {
-    font-weight: 500;
-    color: black;
-    line-height: 1.4;
-    margin-left: 15px;
-    text-align: justify;
-    margin-right: 20px;
-    margin-top: 10px;
-  }
-  
-  .curiosidades-imagem {
-    height: 500px;
-    margin-right: 50px;
-    margin-left: 20px;
-    float: right;
-  }
+}
 
-  div .imagem-texto p a {
-    color: black;
-  }
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
 
-  div .imagem-texto p a:hover {
-    color: orange;
-  }
+.logo {
+  height: 50px;
+}
 
-  .pergunta {
-    background-color: #faf7d9;
-    padding: 10px;
-    margin-top: 20px;
-  }
+.navegacao {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
 
-  .pergunta-texto {
-    margin-left: 15px;
-  }
+.nav-item {
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+}
 
-  div .pergunta-texto li{
-    margin-left: 40px;
-  }
+.navegacao li a {
+  transition: all 0.3s ease 0s;
+}
 
-  .resposta {
-    background-color: #FFB81C;
-    color: #FFB81C;
-  }
+.navegacao li a:hover {
+  color: orange;
+}
 
-  .resposta:hover {
-    color: black;
-    transition: all 0.5s ease 0s;
-    padding: 10px;
-  }
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid black;
+}
 
-  th, td {
-    padding: 3px;
-  }
+.conteudo-principal {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
 
-  table {
-    padding: 5px;
-  }
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 
-  #tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-  }
+.conteudo-principal-escrito-titulo {
+  font-weight: 400;
+  font-size: 64px;
+  color: black;
+}
 
-  #tooltip .tooltiptext {
-    visibility: hidden;
-    width: 300px;
-    background-color: rgb(255, 205, 39);
-    color: #fff;
-    border-radius: 6px;
-    padding: 5px 0;
-    margin-left: 10px;
-    font-size: 24px;
-    text-align: center;
-    position: absolute;
-    z-index: 1;
-  }
-  
-  #tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
+.conteudo-principal-escrito-subtitulo {
+  font-weight: 400;
+  font-size: 24px;
+  color: black;
+}
+
+.conteudo-principal-imagem {
+  height: 430px;
+}
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+  border-top: 0.4px solid black;
+  padding-top: 48px;
+  font-weight: 500;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 16px;
+}
+
+.item {
+  font-weight: 300;
+  font-size: 18px;
+  color: black;
+}
+
+.conteudo {
+  margin-bottom: 48px;
+  padding: 25px;
+  border-top: 0.4px solid black;
+}
+
+.historia-titulo {
+  margin-top: 10px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.subtitulo {
+  font-weight: 500;
+  color: black;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.historia-conteudo {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: black;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.hyperlink {
+  font-weight: 500;
+  color: black;
+}
+
+.hyperlink li a {
+  color: black;
+}
+
+.hyperlink li a:hover {
+  color: orange;
+}
+
+.lista-ordenada {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.lista-ordenada li {
+  list-style-position: inside;
+}
+
+.titulo {
+  font-weight: 500;
+  color: black;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.curiosidades-conteudo {
+  font-weight: 500;
+  color: black;
+  line-height: 1.4;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+.curiosidades-conteudo-com-imagem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imagem-texto {
+  font-weight: 500;
+  color: black;
+  line-height: 1.4;
+  margin-left: 15px;
+  text-align: justify;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.curiosidades-imagem {
+  height: 500px;
+  margin-right: 50px;
+  margin-left: 20px;
+  float: right;
+}
+
+div .imagem-texto p a {
+  color: black;
+}
+
+div .imagem-texto p a:hover {
+  color: orange;
+}
+
+.pergunta {
+  background-color: #faf7d9;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.pergunta-texto {
+  margin-left: 15px;
+}
+
+div .pergunta-texto li {
+  margin-left: 40px;
+}
+
+.resposta {
+  background-color: #ffb81c;
+  color: #ffb81c;
+}
+
+.resposta:hover {
+  color: black;
+  transition: all 0.5s ease 0s;
+  padding: 10px;
+}
+
+th,
+td {
+  padding: 3px;
+}
+
+table {
+  padding: 5px;
+}
+
+#tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+#tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgb(255, 205, 39);
+  color: black;
+  border-radius: 6px;
+  padding: 5px 0;
+  margin-left: 10px;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+#tooltip:hover .tooltiptext {
+  visibility: visible;
+}
