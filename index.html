@@ -4,7 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Queijo</title>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
+
+    <script>
+      window.onload = function diaQueijo() {
+        hoje = new Date();
+        dia = hoje.getDate();
+        mes = hoje.getMonth() + 1;
+        diaq = 20;
+        mesq = 1;
+
+        if (mes < mesq)
+          diasQueijo = 308 + (mes - 1) * 30 + dia
+
+        if (mes == mesq)
+          if (dia < diaq)
+            diasQueijo = 308 + (mes - 1) * 30 + dia
+          if (dia > diaq)
+            diasQueijo = dia - diaq
+          if (dia == diaq)
+            diasQueijo = 0
+
+        if (mes > mesq)
+          diasQueijo = 8 + (mes - 3) * 30 + dia
+
+        document.getElementsByClassName("contador")[0].innerHTML= "Se passaram " + diasQueijo + " dias desde o dia do queijo.";
+      };
+    </script>
   </head>
   <body>
     <header class="cabecalho">
@@ -48,6 +75,12 @@
             Faz parte da culinária de <strong>quase</strong> todos os países.
           </li>
         </ol>
+      </section>
+      <section>
+        <h3 class="conteudo-secundario">
+          Dia nacional do queijo: 20 de Janeiro
+        </h3>
+        <p class="contador"></p>
       </section>
     </main>
   </body>

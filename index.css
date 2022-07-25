@@ -1,3 +1,5 @@
+
+
 :root {
   font-size: 16px;
 }
@@ -275,4 +277,9 @@ table {
 
 #tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.contador {
+  text-align: center;
+  padding: 10px;
 }
