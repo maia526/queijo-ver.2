@@ -4,8 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Queijo</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
+
+    <script>
+      let count = 1;
+      document.getElementById('radio1').checked = true;
+      
+      setInterval( function(){
+        nextImage();
+      }, 2000)
+
+      function nextImage(){
+        count++;
+        if(count>4){
+          count = 1;
+        }
+
+        document.getElementById('radio' + count).checked = true;
+      }
+    </script>
     
   </head>
   <body>
@@ -24,6 +42,9 @@
     </header>
 
     <main class="conteudo-main">
+
+      
+
       <ol class="lista-ordenada">
         <li><a class="hyperlink" href="#origem">Origem do queijo</a></li>
         <li><a class="hyperlink" href="#china">China</a></li>
@@ -210,6 +231,45 @@
           "real", industrializados ou não.
         </p>
       </div>
+
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+
+          <div class="slide first">
+            <img src="images/foto1.jpg" alt="foto1">
+          </div>
+          <div class="slide">
+            <img src="images/foto2.jpg" alt="foto2">
+          </div>
+          <div class="slide">
+            <img src="images/foto3.jpg" alt="foto3">
+          </div>
+          <div class="slide">
+            <img src="images/foto4.jpg" alt="foto4">
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+
+        </div>
+
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+
+      </div>
+      <br><br><br><br><br><br>
     </main>
   </body>
 </html>
