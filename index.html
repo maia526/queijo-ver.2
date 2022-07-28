@@ -9,27 +9,18 @@
 
     <script>
       window.onload = function diaQueijo() {
-        hoje = new Date();
-        dia = hoje.getDate();
-        mes = hoje.getMonth() + 1;
-        diaq = 20;
-        mesq = 1;
+        var umDia = 1000 * 60 * 60 * 24;
+        var hoje = new Date();
+        var diaQueijo = new Date(hoje.getFullYear(), 0, 20);
+        if (hoje.getMonth() == 10 && hoje.getdate() > 20)
+          diaQueijo.setFullYear(diaQueijo.getFullYear() + 1);
+        var resultado =
+          Math.round(diaQueijo.getTime() - hoje.getTime()) / umDia;
+        var resultadoFinal = resultado.toFixed(0);
+        if (resultadoFinal < 0) resultadoFinal = resultadoFinal * -1;
 
-        if (mes < mesq)
-          diasQueijo = 308 + (mes - 1) * 30 + dia
-
-        if (mes == mesq)
-          if (dia < diaq)
-            diasQueijo = 308 + (mes - 1) * 30 + dia
-          if (dia > diaq)
-            diasQueijo = dia - diaq
-          if (dia == diaq)
-            diasQueijo = 0
-
-        if (mes > mesq)
-          diasQueijo = 8 + (mes - 3) * 30 + dia
-
-        document.getElementsByClassName("contador")[0].innerHTML= "Se passaram " + diasQueijo + " dias desde o dia do queijo.";
+        document.getElementsByClassName("contador")[0].innerHTML =
+          "Se passaram " + resultadoFinal + " dias desde o dia do queijo.";
       };
     </script>
   </head>
@@ -82,6 +73,7 @@
         </h3>
         <p class="contador"></p>
       </section>
+
     </main>
   </body>
 </html>

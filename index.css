@@ -287,6 +287,8 @@ table {
   width: 800px;
   height: 400px;
   overflow: hidden;
+  margin-bottom: 100px;
+  margin-top: 30px;
 }
 
 .slides {
@@ -380,3 +382,7 @@ table {
 #radio4:checked ~ .navigation-auto .auto-btn4 {
   background-color: white;
 }
+
+
+
+
