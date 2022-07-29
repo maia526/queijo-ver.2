@@ -383,6 +383,18 @@ table {
   background-color: white;
 }
 
+.idependencia {
+  display: flex;
+  flex-flow: column;
+}
 
+#imagem-idependencia {
+  padding: 20px;
+}
 
-
+.texto-idependencia {
+  text-align: center;
+  font-size: 1.5rem;
+  color: green;
+  margin-bottom: 20px;
+}
