@@ -1,70 +1,191 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Queijo</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <header class="cabecalho">
-       <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a> 
-       <nav>
-           <ul type="none" class="navegacao">
-               <li><a class="nav-item" href="index.html">Main</a></li>
-               <li><a class="nav-item" href="historia.html">História</a></li>
-               <li><a class="nav-item" href="curiosidades.html">Curiosidades</a></li>
-               <li><a class="nav-item" href="quiz.html">Quiz</a></li>
-           </ul>
-       </nav>
+      <a href="index.html"
+        ><img class="logo" src="images/logo.png" alt="logo"
+      /></a>
+      <nav>
+        <ul class="navegacao">
+          <li><a class="nav-item" href="index.html">Home</a></li>
+          <li><a class="nav-item" href="historia.html">História</a></li>
+          <li><a class="nav-item" href="curiosidades.html">Curiosidades</a></li>
+          <li><a class="nav-item" href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="curiosidades-conteudo-main">
-        <h1 class="curiosidades-titulo">Curiosidades Sobre Queijo!</h1>
+    <main class="conteudo">
+      <h1 class="titulo" id="tooltip">
+        Curiosidades Sobre Queijo!<span class="tooltiptext"
+          >Retiradas do site G1</span>
+      </h1>
+      
+      <p class="curiosidades-conteudo">
+        É bem difícil encontrar alguém que não goste de queijo, não é mesmo?
+        Com uma enorme variedade de tipos, sabores e texturas, esse alimento
+        está presente em uma infinidade de receitas deliciosas. Por isso, se
+        você também adora esse ingrediente, conheça abaixo algumas
+        curiosidades sobre o queijo!
+      </p>
 
-        <div class="curiosidades-conteudo">
-            <p>É bem difícil encontrar alguém que não goste de queijo, não é mesmo? Com uma enorme variedade de tipos, sabores e texturas, esse alimento está presente em uma infinidade de receitas deliciosas. Por isso, se você também adora esse ingrediente, conheça abaixo algumas curiosidades sobre o queijo!</p>
+      <h2 class="subtitulo">Ele tem 8000 anos!</h2>
+      <p class="curiosidades-conteudo">
+        É isso mesmo, você não leu errado, o queijo surgiu há cerca de 8000
+        anos. Ninguém sabe exatamente qual a origem, porém muitos
+        historiadores concordam que a região onde foi fabricado o primeiro
+        queijo, possa ter sido no Oriente Médio.
+      </p>
+      <p class="curiosidades-conteudo">
+        A princípio, a lenda conta que um mercador árabe saiu para cavalgar
+        por dias no deserto, levando uma bolsa com leite de cabra para matar a
+        sede. Conforme os dias passaram, abriu a bolsa e se deparou com uma
+        parte líquida (o soro) e uma parte sólida (o queijo).
+      </p>
+
+      <h2 class="subtitulo">Qualquer leite pode ser usado para fazer queijo</h2>
+
+      <p class="curiosidades-conteudo">
+        É possível preparar queijos com leite de vaca, cabra, ovelha, búfalo,
+        dentre outros animais. Na Suécia inclusive, é feito um queijo
+        exclusivo e único, com leite de alce (que deve ser ordenhado por duas
+        horas seguidas) e é um dos mais caros do mundo, custando 980 euros o
+        quilo.
+      </p>
+
+      <h2 class="subtitulo">São produzidos bilhões de quilos de queijo por ano</h2>
+      <p class="curiosidades-conteudo">
+        Em todo o mundo, são produzidos anualmente 18 bilhões de quilos de
+        queijo. O maior produtor são os Estados Unidos, com 4,1 bilhões de
+        quilos. Porém, os maiores consumidores são os gregos, chegando a marca
+        de 27,6 quilos consumidos por pessoa.
+      </p>
+
+      <h2 class="subtitulo">A França possui a maior variedade do mundo</h2>
+      <p class="curiosidades-conteudo">
+        Aliás, se você não se cansa de experimentar novos sabores de queijos,
+        com certeza vai adorar a França. Lá, existem mais tipos de queijo do
+        que dias no ano. Se você comer um tipo diferente por dia, ainda levará
+        em torno de dois anos para degustar todos.
+      </p>
+
+
+      <h2 class="subtitulo">O queijo faz bem para a saúde!</h2>
+      <p class="curiosidades-conteudo">
+        Por fim, vale ressaltar que muitas pessoas cortam o queijo da dieta de
+        forma equivocada. A menos que haja algum tipo de alergia, o consumo do
+        produto é bastante benéfico. Além de equilibrar a flora do intestino e
+        reduzir a gordura corporal, ele também tem ação positiva contra
+        diversos tipos de câncer, como o de mama, próstata e estômago.
+        Portanto, é sempre bom contar com esse alimento na sua queijeira.
+      </p>
+
+      <h2 class="subtitulo">Tem documentário!</h2>
+
+      <div class="curiosidades-conteudo-com-imagem">
+        <div class="imagem-texto">
+          <p>
+            Você já assistiu ao documentário
+            <a
+              href="https://www.adorocinema.com/filmes/filme-202650/"
+              target="_blank"
+              >“O Mineiro e o Queijo”</a
+            >, do cineasta mineiro, Helvécio Ratton? Um documentário político e
+            poético que conta como a técnica de produção artesanal de queijo
+            chegou a Minas no século XVIII, trazida por aventureiros portugueses
+            em busca de ouro.
+          </p>
+          <p>
+            O filme se passa nas regiões do Serro, Canastra e Alto Paranaíba. Ao
+            longo do documentário podemos acompanhar os depoimentos dos
+            produtores do queijo artesanal, e a dificuldade que eles têm em
+            exportar os queijos devido as leis existentes, que proíbem essa
+            comercialização do produto fora de Minas Gerais. Ratton percebeu o
+            quanto este patrimônio está sendo ameaçado por esse motivo.
+          </p>
+          <p>
+            O longa foi muito além das telas, pois sua divulgação ajudou a
+            difundir a causa do Queijo Minas Artesanal e a expor a situação dos
+            pequenos produtores para todo o Brasil e fazendo com que o
+            Ministério da Agricultura flexibilizasse a comercialização do queijo
+          </p>
         </div>
+        <img
+          class="curiosidades-imagem"
+          src="images/imagem-filme.jpg"
+          alt="imagem"
+          onmouseover="mudaImagem(this)"
+        />
+      </div>
 
-        <h2 class="curiosidades-subtitulo">Ele tem 8000 anos!</h2>
+      <h2 class="subtitulo">Tabela Nutricional do Queijo Mussarela</h2>
 
-        <div class="curiosidades-conteudo"></div>
-            <p class="curiosidades-conteudo">É isso mesmo, você não leu errado, o queijo surgiu há cerca de 8000 anos. Ninguém sabe exatamente qual a origem, porém muitos historiadores concordam que a região onde foi fabricado o primeiro queijo, possa ter sido no Oriente Médio.</p>
-            <p class="curiosidades-conteudo">A princípio, a lenda conta que um mercador árabe saiu para cavalgar por dias no deserto, levando uma bolsa com leite de cabra para matar a sede. Conforme os dias passaram, abriu a bolsa e se deparou com uma parte líquida (o soro) e uma parte sólida (o queijo).</p>
-        </div>
-
-        <h2 class="curiosidades-subtitulo">Qualquer leite pode ser usado para fazer queijo</h2>
-
-        <div class="curiosidades-conteudo">
-            <p>É possível preparar queijos com leite de vaca, cabra, ovelha, búfalo, dentre outros animais. Na Suécia inclusive, é feito um queijo exclusivo e único, com leite de alce (que deve ser ordenhado por duas horas seguidas) e é um dos mais caros do mundo, custando 980 euros o quilo.</p>
-        </div>
-
-        <h2 class="curiosidades-subtitulo">São produzidos bilhões de quilos de queijo por ano</h2>
-
-        <div class="curiosidades-conteudo">
-            <p>Em todo o mundo, são produzidos anualmente 18 bilhões de quilos de queijo. O maior produtor são os Estados Unidos, com 4,1 bilhões de quilos. Porém, os maiores consumidores são os gregos, chegando a marca de 27,6 quilos consumidos por pessoa.</p>
-        </div>
-
-        <h2 class="curiosidades-subtitulo">A França possui a maior variedade do mundo</h2>
-
-        <div class="curiosidades-conteudo">
-            <p>Aliás, se você não se cansa de experimentar novos sabores de queijos, com certeza vai adorar a França. Lá, existem mais tipos de queijo do que dias no ano. Se você comer um tipo diferente por dia, ainda levará em torno de dois anos para degustar todos.</p>
-        </div>
-
-        <h2 class="curiosidades-subtitulo">O queijo faz bem para a saúde!</h2>
-
-        <div class="curiosidades-conteudo">
-            <p>Por fim, vale ressaltar que muitas pessoas cortam o queijo da dieta de forma equivocada. A menos que haja algum tipo de alergia, o consumo do produto é bastante benéfico. Além de equilibrar a flora do intestino e reduzir a gordura corporal, ele também tem ação positiva contra diversos tipos de câncer, como o de mama, próstata e estômago. Portanto, é sempre bom contar com esse alimento na sua queijeira.</p>
-        </div>
-
-        <h2 class="curiosidades-subtitulo">Tem documentário!</h2>
-
-        <div class="curiosidades-conteudo-com-imagem">
-            <div class="imagem-texto">
-                <p>Você já assistiu ao documentário <a href="https://www.adorocinema.com/filmes/filme-202650/" target=”_blank”">“O Mineiro e o Queijo”</a>, do cineasta mineiro, Helvécio Ratton? Um documentário  político e poético que conta como a técnica de produção artesanal de queijo chegou a Minas no século XVIII, trazida por aventureiros portugueses em busca de ouro.</p>
-                <p>O filme se passa nas regiões do Serro, Canastra e Alto Paranaíba. Ao longo do documentário podemos acompanhar os depoimentos dos produtores do queijo artesanal, e a dificuldade que eles têm em exportar os queijos devido as leis existentes, que proíbem  essa comercialização do produto fora de Minas Gerais. Ratton percebeu o quanto este patrimônio está sendo ameaçado por esse motivo.</p>
-                <p>O longa foi muito além das telas, pois sua divulgação ajudou a difundir a causa do Queijo Minas Artesanal e a expor a situação dos pequenos produtores para todo o Brasil e fazendo com que o Ministério da Agricultura flexibilizasse a comercialização do queijo</p>
-            </div>
-            <img class="curiosidades-imagem" src="images/filme_queijo.jpg">
-        </div>
+      <table style="width: 100%">
+        <tr>
+          <th style="text-align: center">Tabela Nutricional</th>
+          <td></td>
+          <td>% VD (*)</td>
+        </tr>
+        <tr>
+          <td>Calorias (valor energético)</td>
+          <td>63.60 kcal</td>
+          <td>3.18%</td>
+        </tr>
+        <tr>
+          <td>Carboidratos líquidos</td>
+          <td>0.49 g</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Carboidratos</td>
+          <td>0.49 g</td>
+          <td>0.16%</td>
+        </tr>
+        <tr>
+          <td>Proteínas</td>
+          <td>4.32 g</td>
+          <td>1.44%</td>
+        </tr>
+        <tr>
+          <td>Gorduras totais</td>
+          <td>4.93 g</td>
+          <td>8.96%</td>
+        </tr>
+        <tr>
+          <td>Gorduras saturadas</td>
+          <td>3.11 g</td>
+          <td>14.15%</td>
+        </tr>
+        <tr>
+          <td>Fibra alimentar</td>
+          <td>0.00 g</td>
+          <td>0.00%</td>
+        </tr>
+        <tr>
+          <td>Sódio</td>
+          <td>83.00 mg</td>
+          <td>3.46%</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            (*) % Valores Diários de referência com base em uma dieta de 2.000
+            kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores
+            dependendo de suas necessidades energéticas.
+          </td>
+        </tr>
+      </table>
     </main>
+    <script>
+      function mudaImagem(imagemAAlterar) {
+        imagemAAlterar.src = "./images/historia_queijo.jpg";
+      }
+    </script>
+  </body>
+</html>
